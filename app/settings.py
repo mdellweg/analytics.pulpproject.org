@@ -89,7 +89,10 @@ DATABASES = {
         "PASSWORD": os.environ.get("DB_PASSWORD"),
         "HOST": os.environ.get("DB_HOST"),
         "PORT": 5432,
-    }
+    },
+    "test": {
+        "ENGINE": "django.db.backends.sqlite3",
+    },
 }
 
 # Password validation
